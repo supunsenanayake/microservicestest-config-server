@@ -35,4 +35,4 @@ management:
     env:
       enabled: true  # Include env properties in /actuator/info
   server:
-    port: 8081  # Optional: Run actuator endpoints on a separate port
+    port: 8080  # Optional: Run actuator endpoints on a separate port
