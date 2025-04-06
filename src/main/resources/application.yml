@@ -8,9 +8,10 @@ spring:
     config:
       server:
         git:
-          uri: file:///${user.dir}\config-server\config-server\src\main\config-repo   #C:\Users\supun\Spring_Test_code\2025\04\06\config-server\config-server\src\main\config-repo
+          uri: https://github.com/supunsenanayake/microservicestest-config-server.git   #C:\Users\supun\Spring_Test_code\2025\04\06\config-server\config-server\src\main\config-repo
           clone-on-start: true
-          default-label: main
+          default-label: master
+          search-paths: src/main/config-repo
 
 eureka:
   client:
