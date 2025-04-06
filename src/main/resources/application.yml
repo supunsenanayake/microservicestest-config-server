@@ -17,3 +17,18 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  # Expose all endpoints, or use comma-separated list like: "health,info"
+  endpoint:
+    health:
+      show-details: "always"  # Options: never, when-authorized, always
+    shutdown:
+      enabled: true  # Enable shutdown endpoint
+  info:
+    env:
+      enabled: true  # Include env properties in /actuator/info
+  server:
+    port: 8888  # Optional: Run actuator endpoints on a separate port
